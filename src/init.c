@@ -1,3 +1,5 @@
+extern void test_lambda();
+
 void init(void) {
 	char *video = (char*) 0xb8000;
 	const char *msg = "Hello World!";
@@ -8,5 +10,6 @@ void init(void) {
 		video[2*i] = msg[i];
 		video[2*i + 1] = 0x07;
 	}
+	test_lambda();
 }
 
