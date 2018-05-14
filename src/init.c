@@ -1,4 +1,5 @@
 extern void test_lambda();
+extern void test_video();
 
 void init(void) {
 	char *video = (char*) 0xb8000;
@@ -11,5 +12,6 @@ void init(void) {
 		video[2*i + 1] = 0x07;
 	}
 	test_lambda();
+	test_video();
 }
 
