@@ -4,3 +4,4 @@ project(TestOS VERSION 0.1 LANGUAGES ASM C CXX)
 
 add_subdirectory(lib)
 add_subdirectory(src)
+add_subdirectory(boot)
